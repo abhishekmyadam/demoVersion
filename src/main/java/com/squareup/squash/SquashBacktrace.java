@@ -46,6 +46,7 @@ public final class SquashBacktrace {
           new StackElement(element.getClassName(), element.getFileName(), element.getLineNumber(),
               element.getMethodName());
       stackElems.add(elementList);
+     
     }
     return stackElems;
   }
@@ -73,6 +74,10 @@ public final class SquashBacktrace {
     return ivars;
   }
 
+ 
+ 
+  
+  
   /**
    * Recursive method that follows the "cause" exceptions all the way down the stack, adding them to
    * the passed-in list.
@@ -118,6 +123,7 @@ public final class SquashBacktrace {
       this.message = message;
       this.backtraces = backtraces;
       this.ivars = ivars;
+      
     }
   }
 
