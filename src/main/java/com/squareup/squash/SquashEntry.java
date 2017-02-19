@@ -29,6 +29,7 @@ public class SquashEntry {
   private static final ThreadLocal<DateFormat> DATE_FORMAT_THREAD_LOCAL = new ThreadLocal<DateFormat>() {
     @Override protected DateFormat initialValue() {
       return new SimpleDateFormat(DATE_RFC_2822);
+      system.out.println("hello");
     }
   };
 
